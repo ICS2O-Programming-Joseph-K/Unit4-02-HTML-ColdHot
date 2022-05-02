@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Metadata for this site -->
+    <meta charset="utf-8">
+    <meta name="description" content="ColdHot">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Joseph Kwon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Favicon for this site -->
+    <link rel="apple-touch-icon.png" sizes="180x180" href="./fav_index/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Cold or Hot</title>
+    
+  </head>
+  <body>
+    
+    <script src="./js/script.js"></script>
+    
+    <h1>See if current temperature is cold or hot</h1>
+    
+					<h3>What is your curent temperature?</h3>
+					<form action="javascript:enterClicked()">						
+						<label for="celsius">Enter celsius (°C):</label>
+						<input type="number" step=".01" min="−273.15" max="60" id="celsius" placeholder="Enter number"><br><br>
+						<input type="submit" value="Check the condition">
+					</form>
+			
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="user-info">
+			</div>
+		</div>
+  </body>
+</html>
